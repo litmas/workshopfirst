@@ -19,6 +19,7 @@ body {
     align-items: center;
     grid-template-columns: repeat(3, var(--cell-size));
 }
+
 .cell {
 	width: var(--cell-size);
 	height: var(--cell-size);
@@ -28,4 +29,16 @@ body {
 	align-items: center;
 	position: relative;
 	cursor: pointer;
+}
+
+.x, .o {
+	display: none; 
+}
+
+.cell.x .x {
+	display: block;
+}
+
+.cell.o .o {
+	display: block;
 }
