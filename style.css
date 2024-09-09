@@ -1,0 +1,31 @@
+:root {
+	--cell-size: 100px;
+
+	--color: #81c3fd; /* for hover <em>/
+	--color-set: #0275d8; /</em> when set <em>/
+	--l: 10px; /</em> X line-width */
+}
+body {
+	margin: 0;
+}
+
+.board {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, var(--cell-size));
+}
+.cell {
+	width: var(--cell-size);
+	height: var(--cell-size);
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
